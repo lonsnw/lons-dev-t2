@@ -11,6 +11,7 @@ Currently, two official plugins are available:
 ## Installs
 
 * `npm install`
+* `npm install axios`
 * `npm install redux react-redux @reduxjs/toolkit redux-logger`
 * `npm install react-router-dom`
 <!-- * `npm install framer-motion` -->

@@ -1,7 +1,26 @@
 import { useState } from 'react'
 import './App.css'
+import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  const fetchPortfolio = () => {
+    axios.get('/api/writing').then((response) => {
+
+      
+    }).catch((error) => {
+      console.error(error);
+      alert('Something went wrong loading this page.')
+    });
+  }
+
+  useEffect(() => {
+    fetchPortfolio();
+  }, []);
 
   return (
     <header>
